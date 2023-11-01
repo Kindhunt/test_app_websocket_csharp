@@ -4,12 +4,12 @@
 winexe
 C#
 .cs
-D:\projects\TestAppWebsocket\TestAppWebsocket\obj\Release\net7.0-windows\
+D:\testQuest\TestAppWebsocket\TestAppWebsocket\obj\Release\net7.0-windows\
 TestAppWebsocket
 none
 false
 TRACE;RELEASE;NET;NET7_0;NETCOREAPP
-D:\projects\TestAppWebsocket\TestAppWebsocket\App.xaml
+D:\testQuest\TestAppWebsocket\TestAppWebsocket\App.xaml
 11407045341
 
 6-364752100

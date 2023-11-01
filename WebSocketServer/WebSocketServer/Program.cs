@@ -15,7 +15,11 @@ namespace WebSocketServer
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder.UseStartup<Startup>()
+                              .UseUrls(System.Configuration.ConfigurationManager.
+                        AppSettings["ServerConnectionHTTP"],
+                        System.Configuration.ConfigurationManager.
+                        AppSettings["ServerConnectionHTTPS"]);
                 });
     }
 }

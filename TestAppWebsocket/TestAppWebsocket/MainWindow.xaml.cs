@@ -17,13 +17,28 @@ namespace TestAppWebsocket
             var viewModel = (ApplicationNotificationVM)DataContext;
 
             webSocketService = new WebSocketService(new Client());
-            webSocketService.ConnectAsync(serverUri: System.Configuration.ConfigurationManager.
-                AppSettings["ServerConnection"], 
-                viewModel);
+            try
+            {
+                var IsSecuredConnection = bool.Parse(System.Configuration.ConfigurationManager.
+                AppSettings["IsSecuredConnection"]);
+                if (IsSecuredConnection) {
+                    webSocketService.ConnectAsync(serverUri: System.Configuration.ConfigurationManager.
+                        AppSettings["ServerConnectionWSS"],
+                        viewModel);
+                }
+                else {
+                    webSocketService.ConnectAsync(serverUri: System.Configuration.ConfigurationManager.
+                        AppSettings["ServerConnectionWS"],
+                        viewModel);
+                }
 
-            viewModel.SetWebSocketService(webSocketService);
+                viewModel.SetWebSocketService(webSocketService);
 
-            Closing += OnClosed;
+                Closing += OnClosed;
+            }
+            catch (Exception ex) {
+                Console.WriteLine(ex.ToString());
+            }
         }
 
         private void OnClosed(object? sender, EventArgs e) {
