@@ -22,6 +22,7 @@
 - Перейдите в папку ~\\WebSocketServer\\WebSocketServer
 - Найдите AppExample.config
 - Создайте App.config по примеру
+
 DatabaseConnection - соединение с базой данных (Чтобы его задать заполните поля Host, Port, Database, Username, Password)
 
  - Host - имя хоста или IP-адрес сервера базы данных
@@ -31,4 +32,5 @@ DatabaseConnection - соединение с базой данных (Чтобы
  - Password - пароль юзера БД
 
 ServerConnectionHTTP - не защищенное соединение
+
 ServerConnectionHTTP - защищенное соединение
