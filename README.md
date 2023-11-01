@@ -23,14 +23,13 @@
 - Найдите AppExample.config
 - Создайте App.config по примеру
 
-DatabaseConnection - соединение с базой данных (Чтобы его задать заполните поля Host, Port, Database, Username, Password)
+- DatabaseConnection - соединение с базой данных (Чтобы его задать заполните поля Host, Port, Database, Username, Password)
 
- - Host - имя хоста или IP-адрес сервера базы данных
- - Port - порт хоста
- - Database - название базы данных
- - Username - имя юзера БД
- - Password - пароль юзера БД
+  - Host - имя хоста или IP-адрес сервера базы данных
+  - Port - порт хоста
+  - Database - название базы данных
+  - Username - имя юзера БД
+  - Password - пароль юзера БД
 
-ServerConnectionHTTP - не защищенное соединение
-
-ServerConnectionHTTP - защищенное соединение
+- ServerConnectionHTTP - не защищенное соединение
+- ServerConnectionHTTP - защищенное соединение
