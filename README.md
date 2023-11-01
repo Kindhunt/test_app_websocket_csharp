@@ -15,7 +15,7 @@
 
 ### Клиент 
 
-Перейдите в папку ~\\TestAppWebsocket\\TestAppWebsocket\n
+Перейдите в папку ~\\TestAppWebsocket\\TestAppWebsocket
 Найдите AppExample.config
 Создайте App.config по примеру
 Для использования клиентом защищенного соединения измените IsSecuredConnection на true
