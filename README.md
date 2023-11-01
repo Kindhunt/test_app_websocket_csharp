@@ -33,3 +33,6 @@
 
 - ServerConnectionHTTP - не защищенное соединение
 - ServerConnectionHTTP - защищенное соединение
+
+### База данных
+- Экспортируйте схему из notification.sql
