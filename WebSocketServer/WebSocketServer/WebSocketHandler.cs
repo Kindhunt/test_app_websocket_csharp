@@ -77,12 +77,12 @@ namespace WebSocketServer
     }
     public class WebSocketHandler
     {
-        private int _clientsCounter = 0;
+        private static int _clientsCounter = 0;
         public async Task HandleWebSocket(WebSocket webSocket)
         {
             Console.WriteLine("Handling new websocket connection...");
             // Обработка нового WebSocket-соединения
-            var clientId = ++_clientsCounter;
+            var clientId = Interlocked.Increment(ref _clientsCounter);
 
             WebSocketManager.AddWebSocket(clientId, webSocket);
 
